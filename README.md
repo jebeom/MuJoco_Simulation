@@ -1,4 +1,5 @@
 # MuJoco_Simulation
+MuJoCo is a high-performance physics engine for physical simulation.
 
 You can try it out at the link below.
 
