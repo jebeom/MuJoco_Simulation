@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jebeom/MuJoCo_Simulation
+CMAKE_SOURCE_DIR = /home/jebeom/Mujoco_Simulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jebeom/MuJoCo_Simulation/build
+CMAKE_BINARY_DIR = /home/jebeom/Mujoco_Simulation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jebeom/MuJoCo_Simulation/build/CMakeFiles /home/jebeom/MuJoCo_Simulation/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jebeom/Mujoco_Simulation/build/CMakeFiles /home/jebeom/Mujoco_Simulation/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jebeom/MuJoCo_Simulation/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jebeom/Mujoco_Simulation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mppi
+# Target rules for targets named simulation
 
 # Build rule for target.
-mppi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mppi
-.PHONY : mppi
+simulation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simulation
+.PHONY : simulation
 
 # fast build rule for target.
-mppi/fast:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/build
-.PHONY : mppi/fast
+simulation/fast:
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/build
+.PHONY : simulation/fast
 
 mujoco-2.3.3/simulate/glfw_adapter.o: mujoco-2.3.3/simulate/glfw_adapter.cc.o
 
@@ -129,7 +129,7 @@ mujoco-2.3.3/simulate/glfw_adapter.o: mujoco-2.3.3/simulate/glfw_adapter.cc.o
 
 # target to build an object file
 mujoco-2.3.3/simulate/glfw_adapter.cc.o:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/glfw_adapter.cc.o
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/glfw_adapter.cc.o
 .PHONY : mujoco-2.3.3/simulate/glfw_adapter.cc.o
 
 mujoco-2.3.3/simulate/glfw_adapter.i: mujoco-2.3.3/simulate/glfw_adapter.cc.i
@@ -138,7 +138,7 @@ mujoco-2.3.3/simulate/glfw_adapter.i: mujoco-2.3.3/simulate/glfw_adapter.cc.i
 
 # target to preprocess a source file
 mujoco-2.3.3/simulate/glfw_adapter.cc.i:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/glfw_adapter.cc.i
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/glfw_adapter.cc.i
 .PHONY : mujoco-2.3.3/simulate/glfw_adapter.cc.i
 
 mujoco-2.3.3/simulate/glfw_adapter.s: mujoco-2.3.3/simulate/glfw_adapter.cc.s
@@ -147,7 +147,7 @@ mujoco-2.3.3/simulate/glfw_adapter.s: mujoco-2.3.3/simulate/glfw_adapter.cc.s
 
 # target to generate assembly for a file
 mujoco-2.3.3/simulate/glfw_adapter.cc.s:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/glfw_adapter.cc.s
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/glfw_adapter.cc.s
 .PHONY : mujoco-2.3.3/simulate/glfw_adapter.cc.s
 
 mujoco-2.3.3/simulate/glfw_dispatch.o: mujoco-2.3.3/simulate/glfw_dispatch.cc.o
@@ -156,7 +156,7 @@ mujoco-2.3.3/simulate/glfw_dispatch.o: mujoco-2.3.3/simulate/glfw_dispatch.cc.o
 
 # target to build an object file
 mujoco-2.3.3/simulate/glfw_dispatch.cc.o:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/glfw_dispatch.cc.o
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/glfw_dispatch.cc.o
 .PHONY : mujoco-2.3.3/simulate/glfw_dispatch.cc.o
 
 mujoco-2.3.3/simulate/glfw_dispatch.i: mujoco-2.3.3/simulate/glfw_dispatch.cc.i
@@ -165,7 +165,7 @@ mujoco-2.3.3/simulate/glfw_dispatch.i: mujoco-2.3.3/simulate/glfw_dispatch.cc.i
 
 # target to preprocess a source file
 mujoco-2.3.3/simulate/glfw_dispatch.cc.i:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/glfw_dispatch.cc.i
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/glfw_dispatch.cc.i
 .PHONY : mujoco-2.3.3/simulate/glfw_dispatch.cc.i
 
 mujoco-2.3.3/simulate/glfw_dispatch.s: mujoco-2.3.3/simulate/glfw_dispatch.cc.s
@@ -174,7 +174,7 @@ mujoco-2.3.3/simulate/glfw_dispatch.s: mujoco-2.3.3/simulate/glfw_dispatch.cc.s
 
 # target to generate assembly for a file
 mujoco-2.3.3/simulate/glfw_dispatch.cc.s:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/glfw_dispatch.cc.s
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/glfw_dispatch.cc.s
 .PHONY : mujoco-2.3.3/simulate/glfw_dispatch.cc.s
 
 mujoco-2.3.3/simulate/platform_ui_adapter.o: mujoco-2.3.3/simulate/platform_ui_adapter.cc.o
@@ -183,7 +183,7 @@ mujoco-2.3.3/simulate/platform_ui_adapter.o: mujoco-2.3.3/simulate/platform_ui_a
 
 # target to build an object file
 mujoco-2.3.3/simulate/platform_ui_adapter.cc.o:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/platform_ui_adapter.cc.o
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/platform_ui_adapter.cc.o
 .PHONY : mujoco-2.3.3/simulate/platform_ui_adapter.cc.o
 
 mujoco-2.3.3/simulate/platform_ui_adapter.i: mujoco-2.3.3/simulate/platform_ui_adapter.cc.i
@@ -192,7 +192,7 @@ mujoco-2.3.3/simulate/platform_ui_adapter.i: mujoco-2.3.3/simulate/platform_ui_a
 
 # target to preprocess a source file
 mujoco-2.3.3/simulate/platform_ui_adapter.cc.i:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/platform_ui_adapter.cc.i
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/platform_ui_adapter.cc.i
 .PHONY : mujoco-2.3.3/simulate/platform_ui_adapter.cc.i
 
 mujoco-2.3.3/simulate/platform_ui_adapter.s: mujoco-2.3.3/simulate/platform_ui_adapter.cc.s
@@ -201,7 +201,7 @@ mujoco-2.3.3/simulate/platform_ui_adapter.s: mujoco-2.3.3/simulate/platform_ui_a
 
 # target to generate assembly for a file
 mujoco-2.3.3/simulate/platform_ui_adapter.cc.s:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/platform_ui_adapter.cc.s
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/platform_ui_adapter.cc.s
 .PHONY : mujoco-2.3.3/simulate/platform_ui_adapter.cc.s
 
 mujoco-2.3.3/simulate/simulate.o: mujoco-2.3.3/simulate/simulate.cc.o
@@ -210,7 +210,7 @@ mujoco-2.3.3/simulate/simulate.o: mujoco-2.3.3/simulate/simulate.cc.o
 
 # target to build an object file
 mujoco-2.3.3/simulate/simulate.cc.o:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/simulate.cc.o
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/simulate.cc.o
 .PHONY : mujoco-2.3.3/simulate/simulate.cc.o
 
 mujoco-2.3.3/simulate/simulate.i: mujoco-2.3.3/simulate/simulate.cc.i
@@ -219,7 +219,7 @@ mujoco-2.3.3/simulate/simulate.i: mujoco-2.3.3/simulate/simulate.cc.i
 
 # target to preprocess a source file
 mujoco-2.3.3/simulate/simulate.cc.i:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/simulate.cc.i
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/simulate.cc.i
 .PHONY : mujoco-2.3.3/simulate/simulate.cc.i
 
 mujoco-2.3.3/simulate/simulate.s: mujoco-2.3.3/simulate/simulate.cc.s
@@ -228,7 +228,7 @@ mujoco-2.3.3/simulate/simulate.s: mujoco-2.3.3/simulate/simulate.cc.s
 
 # target to generate assembly for a file
 mujoco-2.3.3/simulate/simulate.cc.s:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/mujoco-2.3.3/simulate/simulate.cc.s
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/mujoco-2.3.3/simulate/simulate.cc.s
 .PHONY : mujoco-2.3.3/simulate/simulate.cc.s
 
 src/controller.o: src/controller.cpp.o
@@ -237,7 +237,7 @@ src/controller.o: src/controller.cpp.o
 
 # target to build an object file
 src/controller.cpp.o:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/controller.cpp.o
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/controller.cpp.o
 .PHONY : src/controller.cpp.o
 
 src/controller.i: src/controller.cpp.i
@@ -246,7 +246,7 @@ src/controller.i: src/controller.cpp.i
 
 # target to preprocess a source file
 src/controller.cpp.i:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/controller.cpp.i
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/controller.cpp.i
 .PHONY : src/controller.cpp.i
 
 src/controller.s: src/controller.cpp.s
@@ -255,7 +255,7 @@ src/controller.s: src/controller.cpp.s
 
 # target to generate assembly for a file
 src/controller.cpp.s:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/controller.cpp.s
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
 
 src/main.o: src/main.cc.o
@@ -264,7 +264,7 @@ src/main.o: src/main.cc.o
 
 # target to build an object file
 src/main.cc.o:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/main.cc.o
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/main.cc.o
 .PHONY : src/main.cc.o
 
 src/main.i: src/main.cc.i
@@ -273,7 +273,7 @@ src/main.i: src/main.cc.i
 
 # target to preprocess a source file
 src/main.cc.i:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/main.cc.i
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/main.cc.i
 .PHONY : src/main.cc.i
 
 src/main.s: src/main.cc.s
@@ -282,7 +282,7 @@ src/main.s: src/main.cc.s
 
 # target to generate assembly for a file
 src/main.cc.s:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/main.cc.s
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
 src/quadraticprogram.o: src/quadraticprogram.cpp.o
@@ -291,7 +291,7 @@ src/quadraticprogram.o: src/quadraticprogram.cpp.o
 
 # target to build an object file
 src/quadraticprogram.cpp.o:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/quadraticprogram.cpp.o
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/quadraticprogram.cpp.o
 .PHONY : src/quadraticprogram.cpp.o
 
 src/quadraticprogram.i: src/quadraticprogram.cpp.i
@@ -300,7 +300,7 @@ src/quadraticprogram.i: src/quadraticprogram.cpp.i
 
 # target to preprocess a source file
 src/quadraticprogram.cpp.i:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/quadraticprogram.cpp.i
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/quadraticprogram.cpp.i
 .PHONY : src/quadraticprogram.cpp.i
 
 src/quadraticprogram.s: src/quadraticprogram.cpp.s
@@ -309,7 +309,7 @@ src/quadraticprogram.s: src/quadraticprogram.cpp.s
 
 # target to generate assembly for a file
 src/quadraticprogram.cpp.s:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/quadraticprogram.cpp.s
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/quadraticprogram.cpp.s
 .PHONY : src/quadraticprogram.cpp.s
 
 src/robotmodel.o: src/robotmodel.cpp.o
@@ -318,7 +318,7 @@ src/robotmodel.o: src/robotmodel.cpp.o
 
 # target to build an object file
 src/robotmodel.cpp.o:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/robotmodel.cpp.o
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/robotmodel.cpp.o
 .PHONY : src/robotmodel.cpp.o
 
 src/robotmodel.i: src/robotmodel.cpp.i
@@ -327,7 +327,7 @@ src/robotmodel.i: src/robotmodel.cpp.i
 
 # target to preprocess a source file
 src/robotmodel.cpp.i:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/robotmodel.cpp.i
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/robotmodel.cpp.i
 .PHONY : src/robotmodel.cpp.i
 
 src/robotmodel.s: src/robotmodel.cpp.s
@@ -336,7 +336,7 @@ src/robotmodel.s: src/robotmodel.cpp.s
 
 # target to generate assembly for a file
 src/robotmodel.cpp.s:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/robotmodel.cpp.s
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/robotmodel.cpp.s
 .PHONY : src/robotmodel.cpp.s
 
 src/trajectory.o: src/trajectory.cpp.o
@@ -345,7 +345,7 @@ src/trajectory.o: src/trajectory.cpp.o
 
 # target to build an object file
 src/trajectory.cpp.o:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/trajectory.cpp.o
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/trajectory.cpp.o
 .PHONY : src/trajectory.cpp.o
 
 src/trajectory.i: src/trajectory.cpp.i
@@ -354,7 +354,7 @@ src/trajectory.i: src/trajectory.cpp.i
 
 # target to preprocess a source file
 src/trajectory.cpp.i:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/trajectory.cpp.i
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/trajectory.cpp.i
 .PHONY : src/trajectory.cpp.i
 
 src/trajectory.s: src/trajectory.cpp.s
@@ -363,7 +363,7 @@ src/trajectory.s: src/trajectory.cpp.s
 
 # target to generate assembly for a file
 src/trajectory.cpp.s:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/src/trajectory.cpp.s
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/trajectory.cpp.s
 .PHONY : src/trajectory.cpp.s
 
 # Help Target
@@ -374,7 +374,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... mppi"
+	@echo "... simulation"
 	@echo "... mujoco-2.3.3/simulate/glfw_adapter.o"
 	@echo "... mujoco-2.3.3/simulate/glfw_adapter.i"
 	@echo "... mujoco-2.3.3/simulate/glfw_adapter.s"

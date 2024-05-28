@@ -215,9 +215,9 @@ void CController::motionPlan()
 
 			VectorXd target_pose;
 			target_pose.setZero(6);
-			target_pose(0) = _x_hand(0) - 0.1;
-			target_pose(1) = _x_hand(1) + 0.05;
-			target_pose(2) = _x_hand(2) + 0.05;
+			target_pose(0) = _x_hand(0) - 0.1;  // -0.1
+			target_pose(1) = _x_hand(1) + 0.05; // +0.05
+			target_pose(2) = _x_hand(2) + 0.05; // +0.05
 			target_pose(3) = _x_hand(3);
 			target_pose(4) = _x_hand(4);
 			target_pose(5) = _x_hand(5);

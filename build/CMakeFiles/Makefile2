@@ -44,16 +44,16 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jebeom/MuJoCo_Simulation
+CMAKE_SOURCE_DIR = /home/jebeom/Mujoco_Simulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jebeom/MuJoCo_Simulation/build
+CMAKE_BINARY_DIR = /home/jebeom/Mujoco_Simulation/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/mppi.dir/all
+all: CMakeFiles/simulation.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/mppi.dir/clean
+clean: CMakeFiles/simulation.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/mppi.dir
+# Target rules for target CMakeFiles/simulation.dir
 
 # All Build rule for target.
-CMakeFiles/mppi.dir/all:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/depend
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jebeom/MuJoCo_Simulation/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target mppi"
-.PHONY : CMakeFiles/mppi.dir/all
+CMakeFiles/simulation.dir/all:
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/depend
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jebeom/Mujoco_Simulation/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target simulation"
+.PHONY : CMakeFiles/simulation.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/mppi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jebeom/MuJoCo_Simulation/build/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mppi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jebeom/MuJoCo_Simulation/build/CMakeFiles 0
-.PHONY : CMakeFiles/mppi.dir/rule
+CMakeFiles/simulation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jebeom/Mujoco_Simulation/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/simulation.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jebeom/Mujoco_Simulation/build/CMakeFiles 0
+.PHONY : CMakeFiles/simulation.dir/rule
 
 # Convenience name for target.
-mppi: CMakeFiles/mppi.dir/rule
+simulation: CMakeFiles/simulation.dir/rule
 
-.PHONY : mppi
+.PHONY : simulation
 
 # clean rule for target.
-CMakeFiles/mppi.dir/clean:
-	$(MAKE) -f CMakeFiles/mppi.dir/build.make CMakeFiles/mppi.dir/clean
-.PHONY : CMakeFiles/mppi.dir/clean
+CMakeFiles/simulation.dir/clean:
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/clean
+.PHONY : CMakeFiles/simulation.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/jebeom/MuJoCo_Simulation
+# Install script for directory: /home/jebeom/Mujoco_Simulation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jebeom/MuJoCo_Simulation/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jebeom/Mujoco_Simulation/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
